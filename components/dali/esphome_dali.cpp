@@ -197,7 +197,6 @@ void DaliBusComponent::create_light_component(short_addr_t short_addr, uint32_t 
 #else
     light_state->set_restore_mode(light::LIGHT_RESTORE_DEFAULT_ON);
 #endif
-    light_state->add_effects({});
 
     // Initialize the DaliLight with the LightState:
     // queries device capabilities (min/max level, color temperature support)
