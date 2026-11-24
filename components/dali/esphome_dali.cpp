@@ -270,8 +270,6 @@ void DaliBusComponent::create_light_component(short_addr_t short_addr, uint32_t 
     App.register_light(light_state);
     static_cast<AppRegistrationAccessor&>(App).register_component_(light_state);
 
-    light_state->add_effects({});
-
     // Initialize the DaliLight with the LightState:
     // queries device capabilities (min/max level, color temperature support)
     dali_light->setup_state(light_state);
